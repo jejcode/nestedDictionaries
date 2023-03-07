@@ -63,22 +63,3 @@ def printInfo(some_dict):
         for value in dojo[key]:
             print(value)
 printInfo(dojo)
-# output:
-# 7 LOCATIONS
-# San Jose
-# Seattle
-# Dallas
-# Chicago
-# Tulsa
-# DC
-# Burbank
-    
-# 8 INSTRUCTORS
-# Michael
-# Amy
-# Eduardo
-# Josh
-# Graham
-# Patrick
-# Minh
-# Devon
