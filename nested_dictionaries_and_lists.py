@@ -29,7 +29,7 @@ students = [
     {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 
-def iterateDictionary(sourceList):
+def iterate_dictionary(sourceList): # get key, value pairs from a given dictionary
     for dictionary in sourceList:
         output = []
         for key, value in dictionary.items():
@@ -40,16 +40,16 @@ def iterateDictionary(sourceList):
         # first_name - John, last_name - Rosales
         # first_name - Mark, last_name - Guillen
         # first_name - KB, last_name - Tonel
-iterateDictionary(students) 
+iterate_dictionary(students) 
 
 # given a list of dictionaries and a key name, the function prints the value
 # stored in that key for each dictionary
-def iterateDictionary2(key_name, some_list):
+def iterate_dictionary2(key_name, some_list):
     for dictionary in some_list:
         print(dictionary[key_name])
 
-iterateDictionary2('first_name', students)
-iterateDictionary2('last_name', students)
+iterate_dictionary2('first_name', students)
+iterate_dictionary2('last_name', students)
 
 dojo = {
    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
@@ -59,7 +59,7 @@ dojo = {
 def printInfo(some_dict):
     for key in dojo.keys():
         print('--------------')
-        print(str(len(dojo[key])) + ' ' + key.upper())
-        for value in dojo[key]:
+        print(str(len(dojo[key])) + ' ' + key.upper()) # include the number of entries in the list
+        for value in dojo[key]: #print each entry in the list
             print(value)
 printInfo(dojo)
